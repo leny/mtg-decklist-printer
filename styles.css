@@ -1,0 +1,170 @@
+/* Magic Printable Decklists: card format */
+@media screen {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    input:focus, textarea:focus {
+        outline: 0;
+    }
+
+    html {
+        background: silver;
+    }
+
+    body {
+        width: 320px;
+        margin: 50px auto 0;
+    }
+
+    header h1 {
+        margin: 10px auto;
+        padding-bottom: 3px;
+        border-bottom: 1px solid black;
+        font: normal 24px/1 "Helvetica Neue", Helvetica, Arial, sans-serif;
+        color: black;
+    }
+
+    .about {
+        margin: 10px auto 20px;
+        font: normal 16px/1.25 "Helvetica Neue", Helvetica, Arial, sans-serif;
+        color: black;
+    }
+
+    .about small {
+        font: 200 14px/1.25 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    .decklist {
+        width: 320px;
+        margin: 0 auto 10px;
+        padding: 1px 0 5px;
+        background: white;
+        box-shadow: 0 0 20px gray;
+    }
+
+    .decklist header {
+        margin: 9px 10px 5px;
+        padding-bottom: 3px;
+        border-bottom: 1px solid black;
+    }
+
+    .decklist header input {
+        display: block;
+        box-sizing: border-box;
+        width: 100%;
+        padding: 4px;
+        vertical-align: middle;
+        border-radius: 4px;
+        border: 1px solid silver;
+        font: normal 16px/1 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    .mainboard {
+        margin: 0 10px 5px;
+        padding-bottom: 4px;
+        border-bottom: 1px dashed gray;
+    }
+
+    .sideboard {
+        margin: 0 10px 5px;
+    }
+
+    textarea {
+        display: block;
+        box-sizing: border-box;
+        width: 100%;
+        padding: 4px;
+        vertical-align: middle;
+        border-radius: 4px;
+        border: 1px solid silver;
+        font: normal 14px/1.25 "Helvetica Neue", Helvetica, Arial, sans-serif;
+        resize: none;
+    }
+
+    .print {
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    .print a {
+        display: inline-block;
+        padding: 4px 10px;
+        border-radius: 4px;
+        background: rgba( 68, 128, 68, 1 );
+        font: 100 20px/1 "Helvetica Neue", Helvetica, Arial, sans-serif;
+        color: white;
+        letter-spacing: .1rem;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    .print a:hover {
+        background: rgba( 25, 128, 25, 1 );
+    }
+
+    footer {
+        padding: 5px 0 0;
+        border-top: 1px solid gray;
+        font: normal 11px/1 "Helvetica Neue", Helvetica, Arial, sans-serif;
+        text-align: center;
+    }
+
+    footer a {
+        text-decoration: none;
+    }
+
+}
+
+@media print {
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body > header, .about, .print, footer {
+        display: none;
+    }
+
+    section.decklist {
+        width: 160pt; /* ±63mm */
+        height: 222pt; /* ±88mm */
+        border: 1pt solid black;
+    }
+
+    .decklist header {
+        margin: 4pt 5pt 2pt;
+    }
+
+    input {
+        display: block;
+        width: 100%;
+        padding-bottom: 1pt;
+        border: 0;
+        border-bottom: 1pt solid black;
+        font: normal 11pt/1 "Helvetica Neue", Helvetica, Arial, sans-serif;
+        color: black;
+    }
+
+    .mainboard {
+        margin: 0 5pt 2pt;
+        padding-bottom: 2pt;
+        border-bottom: 1pt dashed gray;
+    }
+
+    .sideboard {
+        margin: 0 5pt 2pt;
+    }
+
+    textarea {
+        display: block;
+        width: 100%;
+        border: 0;
+        font: normal 6pt/1.2 "Helvetica Neue", Helvetica, Arial, sans-serif;
+        color: black;
+        resize: none;
+    }
+
+}

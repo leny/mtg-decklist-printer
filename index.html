@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <title>MtG: little decklist printer</title>
+
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <header>
+            <h1>MtG: little decklist printer</h1>
+        </header>
+        <section class="about">
+            <p>Enter your decklist below, then click the print button to print a decklist that can fit in a card sleeve.</p>
+            <p><small>(This tool has been tested on some printers with success, but the result is not guaranteed - it's just a tiny tool.)</small></p>
+        </section>
+        <section class="decklist">
+            <header>
+                <input placeholder="Deck name" />
+            </header>
+            <div class="mainboard">
+                <textarea rows="18" placeholder="Enter your mainboard here"></textarea>
+            </div>
+            <div class="sideboard">
+                <textarea rows="10" placeholder="Enter your sideboard here"></textarea>
+            </div>
+        </section>
+        <section class="print">
+            <a href="javascript:window.print();">print</a>
+        </section>
+        <footer>
+            Made with love by <a href="http://leny.me">leny</a> - <a href="#TODO">fork me on github!</a>
+        </footer>
+    </body>
+</html>
